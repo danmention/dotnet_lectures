@@ -8,5 +8,20 @@ namespace Daniel.Controllers
         {
             return View();
         }
+
+        public IActionResult Profile()
+        {
+
+            return View();
+        }
+
+        public IActionResult Address(string? linkedin, string? email)
+        {
+            
+            ViewData["email"] = email;
+            ViewData["linkedin"] = linkedin;
+
+            return View();
+        }
     }
 }
